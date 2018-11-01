@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.evrencoskun.library:tableview-0.8.8">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tableview-0.8.8.aar/9442971dacff1e3f2d8b09b562d7ece5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/tableview-0.8.8.aar/9442971dacff1e3f2d8b09b562d7ece5/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.evrencoskun.library/tableview/0.8.8/cc45b3fa0ae02494f25296c6466239d5f1673700/tableview-0.8.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
