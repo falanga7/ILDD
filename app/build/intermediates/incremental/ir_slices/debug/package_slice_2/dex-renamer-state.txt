@@ -1,4 +1,4 @@
-#Mon Oct 29 15:06:49 CET 2018
-base.0=E\:\\INGEGNERIA INFORMATICA MAGISTRALE\\THESIS\\ILDD\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+#Thu Nov 01 11:29:56 CET 2018
+base.0=D\:\\Users\\903\\StudioProjects\\ILDD\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 path.0=classes.dex
 renamed.0=classes.dex

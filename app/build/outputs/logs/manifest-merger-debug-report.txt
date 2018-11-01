@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
 MERGED from [com.android.support:design:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2946d5ae8dd7fe0761699e4fd1189be2\AndroidManifest.xml:17:1-24:12
 MERGED from [com.evrencoskun.library:tableview:0.8.8] C:\Users\903\.gradle\caches\transforms-1\files-1.1\tableview-0.8.8.aar\9442971dacff1e3f2d8b09b562d7ece5\AndroidManifest.xml:18:1-33:12
 MERGED from [com.android.support:appcompat-v7:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\appcompat-v7-28.0.0.aar\b915b62b1c52767d7d6ba637c7535b22\AndroidManifest.xml:17:1-22:12
@@ -38,25 +38,25 @@ MERGED from [com.android.support:cursoradapter:28.0.0] C:\Users\903\.gradle\cach
 MERGED from [android.arch.lifecycle:livedata:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\livedata-1.1.1.aar\73b9d77c9fbf259e9db78649dc94f05d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\43769d58a92db12555e9300f6c56341d\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6666a5d84a443fb03d0b8cd2f8bd12c\AndroidManifest.xml:17:1-22:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
 	package
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 	android:versionCode
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:1-30:12
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:5:5-22:19
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:5:5-22:19
 MERGED from [com.android.support:design:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2946d5ae8dd7fe0761699e4fd1189be2\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:design:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2946d5ae8dd7fe0761699e4fd1189be2\AndroidManifest.xml:22:5-20
 MERGED from [com.evrencoskun.library:tableview:0.8.8] C:\Users\903\.gradle\caches\transforms-1\files-1.1\tableview-0.8.8.aar\9442971dacff1e3f2d8b09b562d7ece5\AndroidManifest.xml:27:5-31:19
@@ -70,65 +70,65 @@ MERGED from [com.android.support:versionedparcelable:28.0.0] C:\Users\903\.gradl
 	android:appComponentFactory
 		ADDED from [com.android.support:support-compat:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\support-compat-28.0.0.aar\2e9864c33261647568114b3400e7cfa9\AndroidManifest.xml:22:18-91
 	android:supportsRtl
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:10:9-35
 	android:label
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:8:9-41
 	android:roundIcon
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:9:9-54
 	android:icon
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:7:9-43
 	android:allowBackup
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:6:9-35
 	android:theme
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:11:9-40
 activity#it.unisa.ildd.MainActivity
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:12:9-21:20
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:12:9-21:20
 	android:label
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:14:13-45
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:14:13-45
 	android:theme
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:15:13-56
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:15:13-56
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:13:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:16:13-20:29
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:17:17-69
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:17:25-66
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:19:17-77
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:19:27-74
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:19:27-74
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:23:5-76
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:23:5-76
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:23:22-73
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:23:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:24:5-76
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:24:5-76
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:24:22-73
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:24:22-73
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:25:5-79
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:25:5-79
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:25:22-76
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:25:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:26:5-81
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:26:5-81
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:26:22-78
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:26:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:27:5-79
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:27:5-79
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:27:22-76
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:27:22-76
 uses-feature#android.hardware.sensor.linear_accelerometer
-ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:28:5-105
+ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:28:5-105
 	android:required
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:28:79-102
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:28:79-102
 	android:name
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml:28:19-78
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml:28:19-78
 uses-sdk
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 MERGED from [com.android.support:design:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2946d5ae8dd7fe0761699e4fd1189be2\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:design:28.0.0] C:\Users\903\.gradle\caches\transforms-1\files-1.1\design-28.0.0.aar\2946d5ae8dd7fe0761699e4fd1189be2\AndroidManifest.xml:20:5-44
 MERGED from [com.evrencoskun.library:tableview:0.8.8] C:\Users\903\.gradle\caches\transforms-1\files-1.1\tableview-0.8.8.aar\9442971dacff1e3f2d8b09b562d7ece5\AndroidManifest.xml:23:5-25:41
@@ -197,13 +197,13 @@ MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\903\.gradle\ca
 MERGED from [android.arch.lifecycle:livedata-core:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.1.aar\43769d58a92db12555e9300f6c56341d\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6666a5d84a443fb03d0b8cd2f8bd12c\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.1] C:\Users\903\.gradle\caches\transforms-1\files-1.1\runtime-1.1.1.aar\b6666a5d84a443fb03d0b8cd2f8bd12c\AndroidManifest.xml:20:5-44
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		ADDED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
-		INJECTED from E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		ADDED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml
+		INJECTED from D:\Users\903\StudioProjects\ILDD\app\src\main\AndroidManifest.xml

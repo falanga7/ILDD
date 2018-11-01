@@ -31,7 +31,7 @@ public class SensorsListener implements SensorEventListener {
             long time= System.currentTimeMillis();
             Spanned timeString = Html.fromHtml(Long.toString(time) + " ms");
             ((SensorModel) adapter.items.get(0)).setValues(timeString);
-            String linearAcceleration = "<b> X= </b>"  + Float.toString(round(event.values[0],1))+" m/s<sup>2</sup>\t <b>Y= </b>"+ Float.toString(round(event.values[1],1))+" m/s<sup>2</sup>\t <b>Z= </b>"+ Float.toString(round(event.values[2],1))+" m/s<sup>2</sup>";
+            String linearAcceleration = "<b> XB= </b>"  + Float.toString(round(event.values[0],1))+" m/s<sup>2</sup>\t <b>Y= </b>"+ Float.toString(round(event.values[1],1))+" m/s<sup>2</sup>\t <b>Z= </b>"+ Float.toString(round(event.values[2],1))+" m/s<sup>2</sup>";
             ((SensorModel) adapter.items.get(1)).setValues(Html.fromHtml(linearAcceleration));
             adapter.notifyDataSetChanged();
 
