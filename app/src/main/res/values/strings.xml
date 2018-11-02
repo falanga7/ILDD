@@ -2,7 +2,9 @@
     <string name="app_name">ILDD</string>
     <string name="tab_text_1">MAP</string>
     <string name="tab_text_2">MONITOR</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_record">Record</string>
+    <string name="action_stop">Stop</string>
+    <string name="action_select_map">Select map</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="bssid">BSSID</string>
     <string name="ssid">SSID</string>

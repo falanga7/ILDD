@@ -1072,6 +1072,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
+id action_select_map
 id action_settings
 id action_text
 id actions
@@ -1154,8 +1155,10 @@ id line3
 id listMode
 id list_item
 id main_content
+id main_menu_group
 id masked
 id media_actions
+id menu
 id message
 id middle
 id mini
@@ -1400,7 +1403,9 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
-string action_settings
+string action_record
+string action_select_map
+string action_stop
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
