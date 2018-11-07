@@ -53,8 +53,8 @@ public class MyMonitorRecyclerViewAdapter extends RecyclerView.Adapter<RecyclerV
         mSensorManager = (SensorManager) context.getSystemService(Context.SENSOR_SERVICE);
         mSensorModelLA = mSensorManager.getDefaultSensor(Sensor.TYPE_LINEAR_ACCELERATION);
         mSensorModelO = mSensorManager.getDefaultSensor(Sensor.TYPE_ORIENTATION);
-        mSensorManager.registerListener(new SensorsListener(this), mSensorModelLA, SensorManager.SENSOR_DELAY_NORMAL);
-        mSensorManager.registerListener(new SensorsListener(this), mSensorModelO, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(new SensorMonitorListener(this), mSensorModelLA, SensorManager.SENSOR_DELAY_NORMAL);
+        mSensorManager.registerListener(new SensorMonitorListener(this), mSensorModelO, SensorManager.SENSOR_DELAY_NORMAL);
 
     }
 

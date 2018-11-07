@@ -12,10 +12,10 @@ import java.text.DecimalFormat;
 import static java.lang.Math.round;
 
 
-public class SensorsListener implements SensorEventListener {
+public class SensorMonitorListener implements SensorEventListener {
     private MyMonitorRecyclerViewAdapter adapter;
 
-    public SensorsListener(MyMonitorRecyclerViewAdapter adapter){
+    public SensorMonitorListener(MyMonitorRecyclerViewAdapter adapter){
             this.adapter = adapter;
     }
 
@@ -41,8 +41,6 @@ public class SensorsListener implements SensorEventListener {
             ((SensorModel) adapter.items.get(2)).setValues(Html.fromHtml(orientation));
             adapter.notifyDataSetChanged();
         }
-
-
     }
 
     @Override

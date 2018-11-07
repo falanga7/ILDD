@@ -633,6 +633,15 @@ color dim_foreground_disabled_material_dark
 color dim_foreground_disabled_material_light
 color dim_foreground_material_dark
 color dim_foreground_material_light
+color ef_black_alpha_50
+color ef_black_alpha_aa
+color ef_colorAccent
+color ef_colorPrimary
+color ef_colorPrimaryDark
+color ef_colorTextPrimary
+color ef_grey
+color ef_teal
+color ef_white
 color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
@@ -843,6 +852,19 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen ef_font_medium
+dimen ef_font_small
+dimen ef_height_snackbar
+dimen ef_item_padding
+dimen ef_margin_large
+dimen ef_margin_medium
+dimen ef_margin_small
+dimen ef_padding_medium
+dimen ef_padding_small
+dimen ef_spacing
+dimen ef_spacing_double
+dimen ef_spacing_half
+dimen ef_toolbar_elevation
 dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
@@ -1027,6 +1049,12 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable divider
+drawable ef_folder_placeholder
+drawable ef_ic_arrow_back
+drawable ef_ic_arrow_forward
+drawable ef_ic_camera_white
+drawable ef_ic_done_white
+drawable ef_image_placeholder
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1063,6 +1091,7 @@ id action_bar_root
 id action_bar_spinner
 id action_bar_subtitle
 id action_bar_title
+id action_choose_map
 id action_container
 id action_context_bar
 id action_divider
@@ -1072,8 +1101,7 @@ id action_menu_presenter
 id action_mode_bar
 id action_mode_bar_stub
 id action_mode_close_button
-id action_select_map
-id action_settings
+id action_record
 id action_text
 id actions
 id activity_chooser_view_content
@@ -1117,6 +1145,10 @@ id dimensions
 id direct
 id disableHome
 id edit_query
+id ef_item_file_type_indicator
+id ef_snackbar
+id ef_snackbar_btn_action
+id ef_snackbar_txt_bottom_caption
 id end
 id end_padder
 id enterAlways
@@ -1142,6 +1174,7 @@ id icon
 id icon_group
 id ifRoom
 id image
+id image_view
 id info
 id invisible
 id italic
@@ -1154,11 +1187,14 @@ id line1
 id line3
 id listMode
 id list_item
+id main
 id main_content
 id main_menu_group
 id masked
 id media_actions
 id menu
+id menu_camera
+id menu_done
 id message
 id middle
 id mini
@@ -1180,9 +1216,11 @@ id parentPanel
 id parent_matrix
 id percent
 id pin
+id progress_bar
 id progress_circular
 id progress_horizontal
 id radio
+id recyclerView
 id right
 id right_icon
 id right_side
@@ -1205,7 +1243,6 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
-id section_label
 id select_dialog_listview
 id selected
 id sensors_view
@@ -1260,11 +1297,15 @@ id transition_layout_save
 id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
+id tv_empty_images
+id tv_name
+id tv_number
 id uniform
 id unlabeled
 id up
 id useLogo
 id values
+id view_alpha
 id view_offset_helper
 id visible
 id wifi_view
@@ -1334,7 +1375,12 @@ layout design_navigation_item_subheader
 layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_password_icon
-layout fragment_main
+layout ef_activity_image_picker
+layout ef_imagepicker_item_folder
+layout ef_imagepicker_item_image
+layout ef_imagepicker_toolbar
+layout ef_imagepikcer_snackbar
+layout fragment_map
 layout fragment_monitor_list
 layout header_view
 layout mtrl_layout_snackbar
@@ -1360,6 +1406,7 @@ layout select_dialog_singlechoice_material
 layout sensors_view
 layout support_simple_spinner_dropdown_item
 layout wifi_view
+menu ef_image_picker_menu_main
 menu menu_main
 mipmap ic_launcher
 mipmap ic_launcher_foreground
@@ -1412,6 +1459,26 @@ string bottom_sheet_behavior
 string bssid
 string character_counter_content_description
 string character_counter_pattern
+string ef_camera
+string ef_content_desc_folder
+string ef_content_desc_image
+string ef_done
+string ef_error_create_image_file
+string ef_error_no_camera
+string ef_error_null_cursor
+string ef_gif
+string ef_ltitle_permission_denied
+string ef_msg_empty_images
+string ef_msg_limit_images
+string ef_msg_no_camera_permission
+string ef_msg_no_write_external_permission
+string ef_ok
+string ef_permission_write_external_rationale
+string ef_selected
+string ef_selected_with_limit
+string ef_title_folder
+string ef_title_select_image
+string ef_video
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string hide_bottom_view_on_scroll_behavior
@@ -1629,6 +1696,7 @@ style Base_Widget_MaterialComponents_TextInputLayout
 style CardView
 style CardView_Dark
 style CardView_Light
+style ImagePickerTheme
 style Platform_AppCompat
 style Platform_AppCompat_Light
 style Platform_MaterialComponents
@@ -1932,6 +2000,9 @@ style Widget_MaterialComponents_TextInputLayout_OutlinedBox
 style Widget_MaterialComponents_TextInputLayout_OutlinedBox_Dense
 style Widget_MaterialComponents_Toolbar
 style Widget_Support_CoordinatorLayout
+style ef_AppTheme
+style ef_BaseTheme
+style ef_CustomToolbarTheme
 styleable ActionBar background backgroundSplit backgroundStacked contentInsetEnd contentInsetEndWithActions contentInsetLeft contentInsetRight contentInsetStart contentInsetStartWithNavigation customNavigationLayout displayOptions divider elevation height hideOnContentScroll homeAsUpIndicator homeLayout icon indeterminateProgressStyle itemPadding logo navigationMode popupTheme progressBarPadding progressBarStyle subtitle subtitleTextStyle title titleTextStyle
 styleable ActionBarLayout android_layout_gravity
 styleable ActionMenuItemView android_minWidth
@@ -2010,3 +2081,4 @@ styleable Toolbar android_gravity android_minHeight buttonGravity collapseConten
 styleable View android_theme android_focusable paddingEnd paddingStart theme
 styleable ViewBackgroundHelper android_background backgroundTint backgroundTintMode
 styleable ViewStubCompat android_id android_layout android_inflatedId
+xml image_picker_provider_paths

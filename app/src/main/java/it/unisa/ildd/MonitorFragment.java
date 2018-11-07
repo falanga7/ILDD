@@ -32,7 +32,7 @@ public class MonitorFragment extends Fragment {
 
     private int mColumnCount = 3;
     private OnListFragmentInteractionListener mListener;
-    private static final int PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION = 1001;
+
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -65,12 +65,7 @@ public class MonitorFragment extends Fragment {
         RecyclerView recyclerView_wifi = (RecyclerView) wifi_view;
         recyclerView_wifi.setLayoutManager(new GridLayoutManager(context_wifi, mColumnCount));
         recyclerView_wifi.setHasFixedSize(true);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && checkSelfPermission(context_wifi, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
-                    PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION);
-            //After this point you wait for callback in onRequestPermissionsResult(int, String[], int[]) overriden method
 
-        }
         List <Object> items = new ArrayList<>();
         items.add(getResources().getString(R.string.bssid));
         items.add(getResources().getString(R.string.ssid));

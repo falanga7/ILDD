@@ -6,13 +6,13 @@
     <group
         android:id="@+id/main_menu_group">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/action_record"
         android:orderInCategory="100"
         android:title="@string/action_record"
         app:showAsAction="never" />
 
     <item
-        android:id="@+id/action_select_map"
+        android:id="@+id/action_choose_map"
         android:orderInCategory="100"
         android:title="@string/action_select_map"
         app:showAsAction="never" />
