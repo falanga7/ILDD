@@ -120,9 +120,7 @@ public class ImageTouchListener implements View.OnTouchListener {
                     break;
                 }
             }
-            if ((mPositionX * -1) < 0) {
-                mPositionX = 0;
-            } else if ((mPositionX * -1) > imgWidth * mScaleFactor - originalImageWidth) {
+            if ((mPositionX * -1) > imgWidth * mScaleFactor - originalImageWidth) {
                 mPositionX = (imgWidth * mScaleFactor - originalImageWidth * -1);
             }
             if ((mPositionY * -1) < 0) {
@@ -134,6 +132,7 @@ public class ImageTouchListener implements View.OnTouchListener {
             if ((imgHeight * mScaleFactor) < originalImageHeight) {
                 mPositionY = 0;
             }
+
             imgView.setTranslationX(mPositionX);
             imgView.setTranslationY(mPositionY);
 

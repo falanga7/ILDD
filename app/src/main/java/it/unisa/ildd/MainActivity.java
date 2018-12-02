@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
     /**
      * The {@link ViewPager} that will host the section contents.
      */
-    private ViewPager mViewPager;
+    private CustomViewPager mViewPager;
     private Menu menu;
     private static final int PERMISSIONS_REQUEST_CODE_ACCESS_COARSE_LOCATION = 1001;
     private static final int PERMISSIONS_REQUEST_CODE_WRITE_EXTERNAL_STORAGE = 1002;
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
         mSectionsPagerAdapter = new SectionsPagerAdapter(getSupportFragmentManager());
 
         // Set up the ViewPager with the sections adapter.
-        mViewPager = (ViewPager) findViewById(R.id.container);
+        mViewPager = (CustomViewPager) findViewById(R.id.container);
         mViewPager.setAdapter(mSectionsPagerAdapter);
         if (checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             requestPermissions(new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
@@ -208,10 +208,12 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_zoom_mode && item.getTitle().equals(getResources().getString(R.string.action_zoom_mode_off))){
             item.setTitle(getResources().getString(R.string.action_zoom_mode_on));
             zoomMode = true;
+            mViewPager.setPagingEnabled(false);
         }
         else if (id == R.id.action_zoom_mode && item.getTitle().equals(getResources().getString(R.string.action_zoom_mode_on))){
             item.setTitle(getResources().getString(R.string.action_zoom_mode_off));
             zoomMode = false;
+            mViewPager.setPagingEnabled(true);
         }
         if (id == R.id.action_record && item.getTitle().equals("Record")){
 
