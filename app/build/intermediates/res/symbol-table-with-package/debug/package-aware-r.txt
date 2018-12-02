@@ -1103,6 +1103,7 @@ id action_mode_bar_stub
 id action_mode_close_button
 id action_record
 id action_text
+id action_zoom_mode
 id actions
 id activity_chooser_view_content
 id add
@@ -1453,6 +1454,8 @@ string abc_toolbar_collapse_description
 string action_record
 string action_select_map
 string action_stop
+string action_zoom_mode_off
+string action_zoom_mode_on
 string app_name
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior

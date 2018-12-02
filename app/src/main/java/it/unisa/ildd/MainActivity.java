@@ -73,13 +73,15 @@ public class MainActivity extends AppCompatActivity {
     private static ArrayList<ILDDData> detectedData;
     private static Bitmap imageBM;
     private static String filename;
+    public static boolean zoomMode;
+    private boolean inflated = false;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        zoomMode = false;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setIcon(R.mipmap.ic_launcher);
@@ -108,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
         mViewPager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
             @Override
             public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
-                invalidateOptionsMenu();
+                onPrepareOptionsMenu(menu);
             }
 
             @Override
@@ -135,12 +137,23 @@ public class MainActivity extends AppCompatActivity {
         // Inflate the menu; this adds items to the action bar if it is present.
         this.menu = menu;
         getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onPrepareOptionsMenu(Menu menu) {
         int item = mViewPager.getCurrentItem();
-        if(item==1)
+    try {
+        if (item == 1)
             menu.setGroupVisible(R.id.main_menu_group, false);
         else
             menu.setGroupVisible(R.id.main_menu_group, true);
-        return true;
+
+    }
+    catch(NullPointerException ex){
+
+    }
+        return super.onPrepareOptionsMenu(menu);
     }
 
 
@@ -192,6 +205,14 @@ public class MainActivity extends AppCompatActivity {
         if (id == R.id.action_choose_map) {
             this.imagePicker();
         }
+        if (id == R.id.action_zoom_mode && item.getTitle().equals(getResources().getString(R.string.action_zoom_mode_off))){
+            item.setTitle(getResources().getString(R.string.action_zoom_mode_on));
+            zoomMode = true;
+        }
+        else if (id == R.id.action_zoom_mode && item.getTitle().equals(getResources().getString(R.string.action_zoom_mode_on))){
+            item.setTitle(getResources().getString(R.string.action_zoom_mode_off));
+            zoomMode = false;
+        }
         if (id == R.id.action_record && item.getTitle().equals("Record")){
 
             detectedData = new ArrayList<>();
@@ -226,7 +247,7 @@ public class MainActivity extends AppCompatActivity {
             mSensorManager.registerListener(sensorMapListener, mSensorModelO, SensorManager.SENSOR_DELAY_NORMAL);
             item.setTitle("Stop");
             Bitmap bitmap = ((BitmapDrawable)img.getDrawable()).getBitmap();
-            ImageTouchListener itl= new ImageTouchListener(bitmap, detectedData, linearAcceleration, orientationAPR, networkRecordArrayList);
+            ImageTouchListener itl= new ImageTouchListener(this.getApplicationContext(), bitmap, detectedData, linearAcceleration, orientationAPR, networkRecordArrayList);
 
             img.setOnTouchListener(itl);
         }
