@@ -7,6 +7,7 @@
     <string name="action_select_map">Choose map</string>
     <string name="action_zoom_mode_off">Zoom mode: off</string>
     <string name="action_zoom_mode_on">Zoom mode: on</string>
+    <string name="reset">Reset</string>
     <string name="section_format">Hello World from section: %1$d</string>
     <string name="bssid">BSSID</string>
     <string name="ssid">SSID</string>

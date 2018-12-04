@@ -23,6 +23,12 @@
         android:title="@string/action_zoom_mode_off"
         app:showAsAction="never" />
 
+    <item
+        android:id="@+id/reset"
+        android:orderInCategory="100"
+        android:title="@string/reset"
+        app:showAsAction="never" />
+
     </group>
 
 </menu>

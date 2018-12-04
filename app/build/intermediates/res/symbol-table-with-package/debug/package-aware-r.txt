@@ -1222,6 +1222,7 @@ id progress_circular
 id progress_horizontal
 id radio
 id recyclerView
+id reset
 id right
 id right_icon
 id right_side
@@ -1491,6 +1492,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string reset
 string rssi
 string search_menu_title
 string section_format

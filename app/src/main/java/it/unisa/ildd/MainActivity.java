@@ -202,6 +202,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         //noinspection SimplifiableIfStatement
+
+        if (id == R.id.reset) {
+            img.setScaleX(1.0f);
+            img.setScaleY(1.0f);
+            img.setTranslationX(0.0f);
+            img.setTranslationY(0.0f);
+        }
+
         if (id == R.id.action_choose_map) {
             this.imagePicker();
         }
