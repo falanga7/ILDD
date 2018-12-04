@@ -14,6 +14,8 @@ import android.widget.ImageView;
 import java.util.ArrayList;
 import java.util.List;
 
+import static android.view.MotionEvent.INVALID_POINTER_ID;
+
 public class ImageTouchListener implements View.OnTouchListener {
 
     private Bitmap image;
@@ -25,121 +27,118 @@ public class ImageTouchListener implements View.OnTouchListener {
     private LinearAcceleration linearAcceleration;
     private OrientationAPR orientationAPR;
     private ArrayList<NetworkRecord> networkRecordArrayList;
-    private ScaleGestureDetector mScaleGestureDetector;
-    private float mScaleFactor = 1.0f;
+    private ScaleGestureDetector scaleGestureDetector;
+    private float scaleFactor = 1.0f;
 
-    private float mPositionX;
-    private float mPositionY;
     private float mLastTouchX;
     private float mLastTouchY;
-
-    private static final int INVALID_POINTER_ID = -1;
-    private int mActivePointerID = INVALID_POINTER_ID;
+    private float mLastGestureX;
+    private float mLastGestureY;
+    private int mActivePointerId = INVALID_POINTER_ID;
+    private float mPosX;
+    private float mPosY;
 
 
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
         imgView = (ImageView) v;
-        int originalImageWidth = image.getWidth();
-        int originalImageHeight = image.getHeight();
-
-        imgWidth = v.getWidth();
-        imgHeight = v.getHeight();
-
         if(MainActivity.zoomMode){
-            mScaleGestureDetector.onTouchEvent(event);
+            scaleGestureDetector.onTouchEvent(event);
+
             final int action = event.getAction();
-
             switch (action & MotionEvent.ACTION_MASK) {
-
                 case MotionEvent.ACTION_DOWN: {
+                    if (!scaleGestureDetector.isInProgress()) {
+                        final float x = event.getX();
+                        final float y = event.getY();
 
-                    //get x and y cords of where we touch the screen
-                    final float x = event.getX();
-                    final float y = event.getY();
+                        mLastTouchX = x;
+                        mLastTouchY = y;
 
-                    //remember where touch event started
-                    mLastTouchX = x;
-                    mLastTouchY = y;
-
-                    //save the ID of this pointer
-                    mActivePointerID = event.getPointerId(0);
-
-                    break;
-                }
-                case MotionEvent.ACTION_MOVE: {
-
-                    //find the index of the active pointer and fetch its position
-                    final int pointerIndex = event.findPointerIndex(mActivePointerID);
-                    final float x = event.getX(pointerIndex);
-                    final float y = event.getY(pointerIndex);
-
-                    if (!mScaleGestureDetector.isInProgress()) {
-
-                        //calculate the distance in x and y directions
-                        final float distanceX = x - mLastTouchX;
-                        final float distanceY = y - mLastTouchY;
-
-                        mPositionX += distanceX;
-                        mPositionY += distanceY;
-
-
-
+                        mActivePointerId = event.getPointerId(0);
                     }
-                    //remember this touch position for next move event
-                    mLastTouchX = x;
-                    mLastTouchY = y;
-
-
                     break;
                 }
 
-                case MotionEvent.ACTION_UP: {
-                    mActivePointerID = INVALID_POINTER_ID;
+                case MotionEvent.ACTION_POINTER_DOWN: {
+                    if (!scaleGestureDetector.isInProgress()) {
+                        final float gx = scaleGestureDetector.getFocusX();
+                        final float gy = scaleGestureDetector.getFocusY();
+
+                        mLastGestureX = gx;
+                        mLastGestureY = gy;
+                    }
                     break;
                 }
 
-                case MotionEvent.ACTION_CANCEL: {
-                    mActivePointerID = INVALID_POINTER_ID;
-                    break;
+                case MotionEvent.ACTION_MOVE: {
+                    if (!scaleGestureDetector.isInProgress()) {
+                        final int pointerIndex = event.findPointerIndex(mActivePointerId);
+                        final float x = event.getX(pointerIndex);
+                        final float y = event.getY(pointerIndex);
 
+                        final float dx = x - mLastTouchX;
+                        final float dy = y - mLastTouchY;
+
+                        mPosX += dx;
+                        mPosY += dy;
+                        imgView.setTranslationX(mPosX);
+                        imgView.setTranslationY(mPosY);
+                        mLastTouchX = x;
+                        mLastTouchY = y;
+                    } else {
+                        final float gx = scaleGestureDetector.getFocusX();
+                        final float gy = scaleGestureDetector.getFocusY();
+
+                        final float gdx = gx - mLastGestureX;
+                        final float gdy = gy - mLastGestureY;
+
+                        mPosX += gdx;
+                        mPosY += gdy;
+                        imgView.setTranslationX(mPosX);
+                        imgView.setTranslationY(mPosY);
+                        mLastGestureX = gx;
+                        mLastGestureY = gy;
+                    }
+
+                    break;
                 }
 
                 case MotionEvent.ACTION_POINTER_UP: {
-                    //Extract the index of the pointer that left the screen
-                    final int pointerIndex = (action & MotionEvent.ACTION_POINTER_INDEX_MASK) >> MotionEvent.ACTION_POINTER_INDEX_SHIFT;
+
+                    final int pointerIndex = (event.getAction() & MotionEvent.ACTION_POINTER_INDEX_MASK) >> MotionEvent.ACTION_POINTER_INDEX_SHIFT;
                     final int pointerId = event.getPointerId(pointerIndex);
-                    if (pointerId == mActivePointerID) {
-                        //Our active pointer is going up Choose another active pointer and adjust
+                    if (pointerId == mActivePointerId) {
+                        // This was our active pointer going up. Choose a new
+                        // active pointer and adjust accordingly.
                         final int newPointerIndex = pointerIndex == 0 ? 1 : 0;
+
                         mLastTouchX = event.getX(newPointerIndex);
                         mLastTouchY = event.getY(newPointerIndex);
-                        mActivePointerID = event.getPointerId(newPointerIndex);
+
+                        mActivePointerId = event.getPointerId(newPointerIndex);
+                    } else {
+                        final int tempPointerIndex = event.findPointerIndex(mActivePointerId);
+
+                        mLastTouchX = event.getX(tempPointerIndex);
+                        mLastTouchY = event.getY(tempPointerIndex);
                     }
+
                     break;
                 }
             }
-            if ((mPositionX * -1) > imgWidth * mScaleFactor - originalImageWidth) {
-                mPositionX = (imgWidth * mScaleFactor - originalImageWidth * -1);
-            }
-            if ((mPositionY * -1) < 0) {
-                mPositionY = 0;
-            } else if ((mPositionY * -1) > imgHeight * mScaleFactor - originalImageHeight) {
-                mPositionY = (imgHeight * mScaleFactor - originalImageHeight) * -1;
-            }
 
-            if ((imgHeight * mScaleFactor) < originalImageHeight) {
-                mPositionY = 0;
-            }
-
-            imgView.setTranslationX(mPositionX);
-            imgView.setTranslationY(mPositionY);
-
-            return true;
         }
         else {
 
+
+
+            int originalImageWidth = image.getWidth();
+            int originalImageHeight = image.getHeight();
+
+            imgWidth = v.getWidth();
+            imgHeight = v.getHeight();
 
             long now = System.currentTimeMillis();
 
@@ -211,11 +210,24 @@ public class ImageTouchListener implements View.OnTouchListener {
                     imgView.setAdjustViewBounds(true);
                     imgView.setImageBitmap(mutableBitmap);
                 }
-            }
 
+
+            }
+        }
+        return true;
+
+    }
+
+    private class ScaleListener extends ScaleGestureDetector.
+            SimpleOnScaleGestureListener {
+        @Override
+        public boolean onScale(ScaleGestureDetector detector) {
+            scaleFactor *= detector.getScaleFactor();
+            scaleFactor = Math.max(0.1f, Math.min(scaleFactor, 3.0f));
+            imgView.setScaleX(scaleFactor);
+            imgView.setScaleY(scaleFactor);
             return true;
         }
-
     }
 
     public ImageTouchListener(Context context, Bitmap image, ArrayList<ILDDData> detectedData, LinearAcceleration la, OrientationAPR oAPR, ArrayList<NetworkRecord> nral){
@@ -230,25 +242,7 @@ public class ImageTouchListener implements View.OnTouchListener {
         myOptions.inScaled = false;
         myOptions.inPreferredConfig = Bitmap.Config.ARGB_8888;// important
         myOptions.inPurgeable = true;
-        mScaleGestureDetector = new ScaleGestureDetector(context, new ScaleListener());
+        scaleGestureDetector = new ScaleGestureDetector(context, new ScaleListener());
     }
 
-
-    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
-
-        @Override
-        public boolean onScale(ScaleGestureDetector scaleGestureDetector){
-
-            mScaleFactor *= scaleGestureDetector.getScaleFactor();
-
-            mScaleFactor = Math.max(0.1f, Math.min(mScaleFactor, 10.0f));
-
-            imgView.setScaleX(mScaleFactor);
-
-            imgView.setScaleY(mScaleFactor);
-
-            return true;
-
-        }
-    }
 }
