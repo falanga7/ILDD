@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\INGEGNERIA INFORMATICA MAGISTRALE\\THESIS\\ILDD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
+            "outputFile": "D:\\Users\\903\\StudioProjects\\ILDD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v24\\values-v24.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\903\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\fc1d02a59e7d4938e4ed1423cc02f116\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\903\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-28.0.0.aar\\a421690204c91760db3f5ee057480f5c\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\903\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\b915b62b1c52767d7d6ba637c7535b22\\res\\values-v24\\values-v24.xml",
+                    "source": "C:\\Users\\903\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-28.0.0.aar\\cd5501967ffd5107498d6a0637410e0d\\res\\values-v24\\values-v24.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

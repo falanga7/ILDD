@@ -13,10 +13,21 @@ import java.util.List;
 public class WifiScanner {
     WifiManager w;
     MyMonitorRecyclerViewAdapter adapter;
+    boolean detectMode = false;
+    public static ArrayList<NetworkRecord> networkRecordArrayList = new ArrayList<>();
+
     public WifiScanner(Context c, MyMonitorRecyclerViewAdapter a){
         w = (WifiManager) c.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
         adapter = a;
     }
+
+    public WifiScanner(Context c, ArrayList<NetworkRecord> networkRecordArrayList){
+        w = (WifiManager) c.getApplicationContext().getSystemService(Context.WIFI_SERVICE);
+        detectMode = true;
+        this.networkRecordArrayList = networkRecordArrayList;
+
+    }
+
 
 
 
@@ -26,10 +37,13 @@ public class WifiScanner {
         BroadcastReceiver wifiScanReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context c, Intent intent) {
+                w.startScan();
                 boolean success = intent.getBooleanExtra(
                         WifiManager.EXTRA_RESULTS_UPDATED, false);
                 if (success) {
                     scanSuccess();
+                    detectionSuccess();
+
                 }
             }
         };
@@ -38,6 +52,22 @@ public class WifiScanner {
         c.registerReceiver(wifiScanReceiver, intentFilter);
         w.startScan();
 
+    }
+
+    private void detectionSuccess(){
+        if(networkRecordArrayList.size() != 0){
+            networkRecordArrayList.clear();
+        }
+        List<ScanResult> list = w.getScanResults();
+        w.startScan();
+
+        for (ScanResult sr : list) {
+            NetworkRecord nr = new NetworkRecord();
+            nr.setBssid(sr.BSSID.substring(0, sr.BSSID.length() - 2) + "xx");
+            nr.setSsid(sr.SSID);
+            nr.setRssi(Integer.toString(sr.level));
+            networkRecordArrayList.add(nr);
+        }
     }
 
     private void scanSuccess() {

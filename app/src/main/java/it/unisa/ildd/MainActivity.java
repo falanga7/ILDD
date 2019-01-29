@@ -80,6 +80,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
         zoomMode = false;
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -173,33 +174,6 @@ public class MainActivity extends AppCompatActivity {
         SensorMapListener sensorMapListener = new SensorMapListener(linearAcceleration, orientationAPR);
         mSensorManager = (SensorManager) getApplicationContext().getSystemService(Context.SENSOR_SERVICE);
         networkRecordArrayList = new ArrayList<>();
-        w = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
-        BroadcastReceiver wifiScanReceiver = new BroadcastReceiver() {
-            @Override
-            public void onReceive(Context c, Intent intent) {
-                boolean success = intent.getBooleanExtra(
-                        WifiManager.EXTRA_RESULTS_UPDATED, false);
-                if (success) {
-                    if(networkRecordArrayList.size() != 0){
-                        networkRecordArrayList.clear();
-                    }
-                    List<ScanResult> list = w.getScanResults();
-                    w.startScan();
-                    for (ScanResult sr : list) {
-                        NetworkRecord nr = new NetworkRecord();
-                        nr.setBssid(sr.BSSID.substring(0, sr.BSSID.length() - 2) + "xx");
-                        nr.setSsid(sr.SSID);
-                        nr.setRssi(Integer.toString(sr.level));
-                        networkRecordArrayList.add(nr);
-                    }
-                }
-            }
-        };
-        IntentFilter intentFilter = new IntentFilter();
-        intentFilter.addAction(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION);
-        getApplicationContext().registerReceiver(wifiScanReceiver, intentFilter);
-        w.startScan();
-
 
         //noinspection SimplifiableIfStatement
 
@@ -224,6 +198,8 @@ public class MainActivity extends AppCompatActivity {
             mViewPager.setPagingEnabled(true);
         }
         if (id == R.id.action_record && item.getTitle().equals("Record")){
+
+
 
             detectedData = new ArrayList<>();
 

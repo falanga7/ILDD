@@ -190,7 +190,7 @@ public class ImageTouchListener implements View.OnTouchListener {
                     oAPR.setPitch(orientationAPR.getPitch());
                     data.setLinearAcceleration(la);
                     data.setOrientationAPR(oAPR);
-                    data.setNetworkRecordArrayList(new ArrayList<>(networkRecordArrayList));
+                    data.setNetworkRecordArrayList(new ArrayList<>(WifiScanner.networkRecordArrayList));
                     dataArray.add(data);
 
                     Bitmap workingBitmap = Bitmap.createBitmap(image);

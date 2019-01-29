@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\INGEGNERIA INFORMATICA MAGISTRALE\\THESIS\\ILDD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
+            "outputFile": "D:\\Users\\903\\StudioProjects\\ILDD\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-w820dp-v13\\values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "E:\\INGEGNERIA INFORMATICA MAGISTRALE\\THESIS\\ILDD\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
+                    "source": "D:\\Users\\903\\StudioProjects\\ILDD\\app\\src\\main\\res\\values-w820dp\\dimens.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "4",

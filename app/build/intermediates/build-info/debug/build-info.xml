@@ -5,71 +5,81 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    plugin-version="3.2.1"
-    timestamp="1543923041517"
-    token="228891053994293599"
+    ir-eligibility="FIELD_TYPE_CHANGE"
+    plugin-version="3.3.0"
+    timestamp="1548761185811"
+    token="-5848230085960025738"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="0" />
+        duration="300" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="0" />
+        duration="13" />
     <task
         name="verifier"
-        duration="0" />
+        duration="3" />
+
+    <artifact
+        location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+        type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1543921771713"
+        timestamp="1548754994524"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\resources\instant-run\debug\resources-debug.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="E:\INGEGNERIA INFORMATICA MAGISTRALE\THESIS\ILDD\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\instant-run-apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        timestamp="1543923041517"
-        verifier="COLD_SWAP_REQUESTED" />
+        ir-eligibility="FIELD_TYPE_CHANGE"
+        timestamp="1548761185811"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="D:\Users\903\StudioProjects\ILDD\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            type="SPLIT" />
+    </build>
 
 </instant-run>
